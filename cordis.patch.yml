@@ -1,0 +1,3 @@
+- insert:
+    - id: local-request-context
+      name: '@local/dsh-request-context'

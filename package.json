@@ -1,0 +1,36 @@
+{
+  "name": "@local/dsh-request-context",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek Harness 本地插件：逐次查看组装后的完整模型调用上下文（消息、指令、工具定义、token 分类与轮次统计），内容寻址去重，不读取认证凭据。",
+  "license": "MIT",
+  "author": "classicer",
+  "homepage": "https://github.com/classicer/dsh-request-context",
+  "repository": { "type": "git", "url": "git+https://github.com/classicer/dsh-request-context.git" },
+  "bugs": { "url": "https://github.com/classicer/dsh-request-context/issues" },
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "context", "token", "observability", "llm"],
+  "engines": { "node": ">=20" },
+  "exports": { ".": "./index.js", "./client": "./client.js" },
+  "files": [
+    "index.js",
+    "store.js",
+    "analytics.js",
+    "turns.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "docs"
+  ],
+  "scripts": {
+    "test": "node --test --test-isolation=none test.mjs review-tests.mjs analytics-tests.mjs turns-tests.mjs client-tests.mjs",
+    "check": "node --check index.js && node --check client.js && node --check store.js && node --check analytics.js && node --check turns.js"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "immediately": true, "inject": ["@deepseek-ai/dsh-client-ui-conversation"] }
+  }
+}

@@ -1,0 +1,8 @@
+.state/
+.test-state/
+node_modules/
+
+# 公众号转换产物（本地预览用，不发布）
+*.wechat.html
+*.wechat.fragment.html
+*.wechat.report.json
