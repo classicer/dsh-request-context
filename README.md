@@ -7,8 +7,6 @@
 ![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 
-> 配套文章：[烧掉 1.4 亿 Token 后，我让助手翻了 26 个会话的日志](docs/token-lessons.md)
-
 ---
 
 ## 它解决什么问题
