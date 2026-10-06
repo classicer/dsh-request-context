@@ -4,7 +4,7 @@
 >
 > It does not patch the Harness core, does not change model input, adds no tools, and never reads your API keys or OAuth credentials.
 
-[中文说明](README.md) · [Companion article (Chinese)](docs/token-lessons.md) · [MIT](LICENSE)
+[中文说明](README.md) · [MIT](LICENSE)
 
 ## What it is for
 
